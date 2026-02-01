@@ -3,33 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocina Esencial - Mi Primera Web</title>
+    <title>Cocina Esencial</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
-        img { max-width: 100%; height: auto; border-radius: 10px; }
-        .video-container { margin-top: 20px; }
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            text-align: center; 
+            background-color: #fafafa;
+            color: #333;
+        }
+        h1 { color: #d35400; margin-bottom: 10px; }
+        p { font-size: 1.1em; line-height: 1.6; color: #555; }
+        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        hr { border: 0; height: 1px; background: #ddd; margin: 40px 0; }
+        
+        /* Esto arregla el video para que se vea bien en cualquier pantalla */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Ratio 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        footer { margin-top: 50px; font-size: 0.9em; color: #888; }
     </style>
 </head>
 <body>
 
-    <h1>Bienvenido a Cocina Esencial</h1>
-    <p>Esta es una aplicación web conceptual creada para la unidad 1.</p>
-    <p>Aquí compartimos recetas sencillas. El objetivo de este sitio es demostrar una arquitectura Cliente-Servidor básica donde el servidor solo entrega información estática.</p>
+    <h1>Cocina Esencial</h1>
+    <p>Bienvenido a nuestro espacio culinario. Aquí compartimos recetas tradicionales con un enfoque simple y delicioso para preparar en casa.</p>
 
     <hr>
 
     <h2>Nuestra Especialidad: Pasta Fresca</h2>
     <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Plato de pasta">
+    <p>No hay nada como el sabor de la pasta hecha a mano con ingredientes naturales.</p>
 
     <hr>
 
-    <h2>Video de la Semana</h2>
+    <h2>Aprende a prepararla</h2>
     <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/S_8toNN59f8?si=Simulado" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/z1gTjgU_qQY" title="Cómo hacer pasta fresca" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <footer>
-        <p>Sitio creado para práctica escolar - 2026</p>
+        <p>Cocina Esencial &copy; 2026. Todos los derechos reservados.</p>
     </footer>
 
 </body>
