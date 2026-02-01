@@ -3,32 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocina Esencial</title>
+    <title>Leyendas del Blues</title>
     <style>
+        /* Estilos Generales para una atmósfera elegante y melancólica */
         body { 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 20px; 
-            text-align: center; 
-            background-color: #fafafa;
-            color: #333;
+            font-family: 'Georgia', serif; /* Tipografía clásica */
+            background-color: #0d1117; /* Fondo casi negro/azulado */
+            color: #c9d1d9; /* Texto gris claro suave a la vista */
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
-        h1 { color: #d35400; margin-bottom: 10px; }
-        p { font-size: 1.1em; line-height: 1.6; color: #555; }
-        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        hr { border: 0; height: 1px; background: #ddd; margin: 40px 0; }
-        
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 { 
+            font-size: 3em; 
+            color: #58a6ff; /* Un azul tenue pero brillante */
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: #8b949e; /* Gris metálico */
+            font-weight: normal;
+            border-bottom: 1px solid #30363d;
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #8b949e;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        /* Estilo de la imagen */
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            border: 1px solid #30363d; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Sombra dramática */
+            margin-top: 20px;
+            filter: sepia(20%) contrast(110%); /* Filtro para darle toque vintage */
+        }
+
+        /* Contenedor del video responsive */
         .video-container {
             position: relative;
             padding-bottom: 56.25%; /* Ratio 16:9 */
             height: 0;
             overflow: hidden;
             max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #30363d;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-top: 30px;
             background-color: #000;
         }
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -36,30 +76,39 @@
             width: 100%;
             height: 100%;
         }
-        footer { margin-top: 50px; font-size: 0.9em; color: #888; }
+
+        footer { 
+            margin-top: 60px; 
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
+            font-size: 0.9em; 
+            color: #484f58; 
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Cocina Esencial</h1>
-    <p>Bienvenido a nuestro espacio culinario. Aquí compartimos el arte de la cocina tradicional con recetas directas y deliciosas.</p>
+    <div class="container">
+        <h1>Alma de Blues</h1>
+        <p>
+            "El blues es la raíz; todo lo demás son los frutos." <br>
+            Un homenaje a los pioneros que transformaron la tristeza en arte.
+        </p>
 
-    <hr>
+        <img src="https://www.blackartdepot.com/cdn/shop/products/B-2996_Legends_of_the_Blues_1000-833.jpg?v=1753405374" alt="Collage de Leyendas del Blues">
+        <p style="font-size: 0.9em;">Figuras icónicas que definieron el sonido del Delta y Chicago.</p>
 
-    <h2>Nuestra Especialidad: Pasta Fresca</h2>
-    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Plato de pasta">
-    <p>Ingredientes naturales y preparación artesanal para lograr el sabor auténtico italiano.</p>
+        <h2>El Rey del Blues</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/s5XmO_xQ6Zo" title="B.B. King - The Thrill Is Gone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>B.B. King interpretando "The Thrill Is Gone", una obra maestra de la emoción.</p>
 
-    <hr>
-
-    <h2>Aprende la técnica</h2>
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/j7_lSP8Vc3o" title="Cómo hacer pasta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <footer>
+            <p>Proyecto Conceptual Web &copy; 2026</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>Cocina Esencial &copy; 2026</p>
-    </footer>
 
 </body>
 </html>
